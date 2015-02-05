@@ -1,17 +1,24 @@
 Rails.application.routes.draw do
 
-
-
   root :to => 'pages#home'
 
+  get'about' => 'pages#about'
+
+  get'amazonsuccess' => 'pages#amazonsuccess'
 
   get'blog' => 'pages#blog'
  
   get'blogpost1' => 'pages#blogpost1'
 
+  get'calculator' => 'pages#calculator'
+
+  get'calculatorsummary' => 'pages#calculatorsummary'
+
   get'enterprise' => 'pages#enterprise'
  
   get'learningcenter' => 'pages#learningcenter'
+
+  get'myimaximize' => 'pages#myimaximize'
 
   get'personalsupport' => 'pages#personalsupport'
  
@@ -24,6 +31,7 @@ Rails.application.routes.draw do
   get'professionalpricing' => 'pages#professionalpricing'
  
   get'termsandconditions' => 'pages#termsandconditions'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

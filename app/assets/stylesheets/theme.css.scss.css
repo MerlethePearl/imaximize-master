@@ -5,7 +5,9 @@ body:after{content:url(../img/lightbox/close.png) url(../img/lightbox/loading.gi
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700);
 
+
 @import 'bootstrap';
+@import "font-awesome";
 
  .container-fluid{
 max-width: 100% !important;
@@ -14,9 +16,80 @@ padding-right: 0px;
 padding-left: 0px;
 }
 
+
+.header {
+z-index:999;
+position:relative;
+border-top:solid 5px #fff;
+border-bottom:solid 2px #fff;
+background: #ffffff;
+}
+.header .navbar {
+margin: 10px;
+min-height: inherit;
+background: #ffffff;
+}
+.header .navbar-default {
+border: none;
+background: #ffffff;
+}
+.header .navbar-collapse {
+position: relative;
+/*max-height: inherit;*/
+}
+
+/*Brand*/
+.header .navbar-brand {
+z-index: 2;
+position: relative;
+padding: 0 10px 10px;
+}
+/*Navbar*/
+.header .navbar-default .navbar-nav > li > a {
+color: #333333;
+font-size: 15px;
+font-weight:400;
+padding: 15px 15px 5px;
+}
+.header .navbar-default .navbar-nav > .active > a {
+color: #6ec9c9;
+padding: 0 5px 5px;
+}
+/*Dropdown*/
+.header .navbar-right .dropdown-menu {
+right: inherit;
+}
+.header .navbar .nav > li > a i.icon-angle-down {
+top: -1px;
+left: 1px;
+font-size: 12px;
+position: relative;
+margin: 0 !important;
+}
+/*Navber Toggle*/
+.navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+background: #6ec9c9;
+}
+.navbar-toggle:hover {
+background: #33333 !important;
+}
+.navbar-default .navbar-toggle {
+border-color: #6ec9c9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+background: #fff;
+}
+.navbar-default .navbar-fixed-top {
+background: #fff;
+}
+
 .bg-primary {
   background-color: #e74c3c !important;
 }
+
+
 .bg-secondary-1 {
   background-color: #2c3e50 !important;
 }
@@ -782,7 +855,7 @@ header .container {
 header .logo {
   max-width: 200px;
   display: inline-block;
-  margin-bottom: 24px;
+  margin-bottom: 204px;
 }
 header .btn {
   margin-right: 16px;

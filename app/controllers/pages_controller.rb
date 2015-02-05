@@ -1,39 +1,51 @@
 class PagesController < ApplicationController
   
-  def learningcenter
+  def about
    end
+
+  def amazonsuccess
+    end
 
   def blog
   	end
 
-  	  def blogpost1
+  def blogpost1
   	end
 
-  	  def enterprise
+  def calculator
+    end
+
+  def calculatorsummary
+    end
+
+  def enterprise
   	end
 
-  	  def home
+  def home
   	end
 
-  	  def learningcenter
+  def learningcenter
   	end
 
-  	  def personalsupport
+  def myimaximize
+    end
+
+  def personalsupport
   	end
 
-  	  def privacypolicy
+  def privacypolicy
   	end
 
-  	  def perfessional
+  def perfessional
   	end
 
-  	  def professionaldashboard
+  def professionaldashboard
   	end
 
-  	  def professionalpricing
+  def professionalpricing
   	end
   	
-  	  def termsandconditions
+  def termsandconditions
   	end
 
 

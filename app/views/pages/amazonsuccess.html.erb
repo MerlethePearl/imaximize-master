@@ -1,0 +1,48 @@
+<html>
+<head>
+	<script src="http://imaximizesocialsecurity.com/wp-includes/js/jquery/jquery.js"></script>
+	<script src="/wp-content/themes/imaximize/js/angular-app/amplify.store.js"></script>
+	<script type="text/javascript">
+		var $ = jQuery.noConflict();
+
+		var PurchaseJS=
+		{
+			Init:function()
+			{
+				var authToken = amplify.store( "authToken" );
+
+				if( !authToken )
+				{
+					window.location = "/individual/calculator";
+					return;
+				}
+
+				var baseUri = "http://api.imaximizesocialsecurity.com/api/";
+
+				 $.ajax(baseUri + "AmazonPayment",
+		        {
+		            type: "GET",
+		            headers: { "TC_ApiAuthToken": authToken },
+
+		            success: function (results)
+		            {
+		            	amplify.store("showReport", "1");
+
+		                window.location = "/individual/calculator/?page_id=134&sr=1";
+		            },
+
+		            error: function (jqXhr)
+		            {
+		            	window.location = "/individual/calculator";  
+		            }
+		        });
+			}
+		};
+
+		$(document).ready( PurchaseJS.Init );
+	</script>
+</head>
+<body>
+	Thank you for your purchase, redirecting...
+</body>
+</html>
